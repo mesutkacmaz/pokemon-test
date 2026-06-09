@@ -40,7 +40,7 @@ export function BattleModal({
 
       {/* Modal */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4">
-        <div className="bg-background border border-border rounded-xl sm:rounded-2xl shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-y-auto">
+        <div className="bg-background border border-border rounded-xl sm:rounded-2xl shadow-2xl max-w-5xl w-full max-h-[95vh] overflow-y-auto scrollbar-thin scrollbar-thumb-sky-700 scrollbar-track-sky-100">
           <div className="sticky top-0 bg-linear-to-r from-primary via-accent to-secondary px-4 sm:px-8 py-4 sm:py-6 flex items-center justify-between rounded-t-xl sm:rounded-t-2xl z-20">
             <div className="min-w-0 flex items-center gap-3">
               <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-white shrink-0" />
