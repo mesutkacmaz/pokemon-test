@@ -1,89 +1,89 @@
-export interface PokemonStats {
+export type PokemonStats = {
   hp: number;
   attack: number;
   defense: number;
   spAtk: number;
   spDef: number;
   speed: number;
-}
+};
 
-export interface Pokemon {
+export type Pokemon = {
   id: number;
   name: string;
   image: string;
   types: string[];
   stats: PokemonStats;
-}
+};
 
-export interface PokemonListResult {
+export type PokemonListResult = {
   name: string;
   url: string;
-}
+};
 
-export interface PokemonListResponse {
+export type PokemonListResponse = {
   count: number;
   next: string | null;
   previous: string | null;
   results: PokemonListResult[];
-}
+};
 
-export interface PokemonTypeResult {
+export type PokemonTypeResult = {
   name: string;
   url: string;
-}
+};
 
-export interface PokemonTypeResponse {
+export type PokemonTypeResponse = {
   count: number;
   next: string | null;
   previous: string | null;
   results: PokemonTypeResult[];
-}
+};
 
-export interface PokemonDetailType {
+export type PokemonDetailType = {
   slot: number;
   type: {
     name: string;
     url: string;
   };
-}
+};
 
-export interface PokemonDetailStat {
+export type PokemonDetailStat = {
   base_stat: number;
   effort: number;
   stat: {
     name: string;
     url: string;
   };
-}
+};
 
-export interface PokemonDetailSprites {
+export type PokemonDetailSprites = {
   front_default: string | null;
   other: {
     "official-artwork": {
       front_default: string | null;
     };
   };
-}
+};
 
-export interface PokemonDetailResponse {
+export type PokemonDetailResponse = {
   id: number;
   name: string;
   sprites: PokemonDetailSprites;
   types: PokemonDetailType[];
   stats: PokemonDetailStat[];
-}
+};
 
-export interface TypePokemonEntry {
+export type TypePokemonEntry = {
   is_main_series: boolean;
   pokemon: {
     name: string;
     url: string;
   };
   slot: number;
-}
+};
 
-export interface TypeDetailResponse {
+export type TypeDetailResponse = {
   id: number;
   name: string;
   pokemon: TypePokemonEntry[];
-}
+};

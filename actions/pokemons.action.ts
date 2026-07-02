@@ -34,7 +34,7 @@ function extractPokemonTypes(details: PokemonDetailResponse): string[] {
   return details.types.map((t) => t.type.name);
 }
 
-export async function getPokemons(
+export async function getPokemon(
   limit = POKEMON_LIMIT,
   offset = 0,
 ): Promise<Pokemon[]> {

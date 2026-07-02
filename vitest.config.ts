@@ -9,8 +9,8 @@ export default defineConfig({
     setupFiles: ["./vitest.setup.ts"],
     globals: true,
     include: [
-      "./tests/integration/**/*.test.{ts,tsx}",
-      "./tests/unit/**/*.test.{ts,tsx}",
+      "./__tests__/integration/**/*.test.{ts,tsx}",
+      "./__tests__/unit/**/*.test.{ts,tsx}",
     ],
     reporters: "verbose",
     clearMocks: true,
